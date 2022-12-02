@@ -1,0 +1,28 @@
+html {
+    background-color: lightseagreen;
+    color:black
+}
+
+body {
+	font:normal medium 'Gill Sans','Gill Sans MT','Goudy Bookletter 1911','Linux Libertine O','Liberation Serif',Candara,serif;
+	padding:0;
+	margin:0 auto;
+	width:40em;
+	line-height:1.75em;
+	word-spacing:0.1em
+}
+
+header {
+    background-image: url(../images/guitarra.jpg);
+
+}
+
+nav ul {
+	/* Para posicionar la lista en una fila */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style: none;
+    color: white;
+    margin: 15px;
+}

@@ -1,0 +1,138 @@
+/* Nos permite darle al body el estilo que queramos */
+body {
+	margin: 2px;
+    background-color: lightgray;
+	
+	/* Se ha usado flexbox en columnas pero podría haberse obviado porque es como se posicionan por defecto las etiquetas semánticas */
+	display: flex;
+	flex-direction: column;
+}
+
+/* Le damos a todas estas secciones el estilo deseado */
+header, footer, main, section,article {
+    background-color: darkgray;
+	color: #fff;
+    border-radius: 7px;    
+	font-size: 1.25rem;
+    padding: 20px
+}
+
+/* Estilos de la cabecera */
+header {
+	position: relative;		/* Para que el posicionamiento absoluto funcione dentro */
+
+    background-image: url(../images/guitarra.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+	/* Para posicionar la lista en una fila */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	margin: 10; 
+}
+
+nav li {
+	padding: 1em;
+}
+
+nav ul a {
+	text-decoration: dashed;
+	color: white;
+}
+
+/* Estilos de la id seccion*/
+#seccion {
+    /* Para posicionar la seccion en una fila */
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Estilos de la id principal*/
+#principal {
+    background-color: gray;
+
+    /* Usamos flexbox para poner esta sección en columnas */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo que le daremos a la clase asidcate*/
+.asidcate {
+    flex-basis: 30%;
+    background-color: gray;
+    /* Utilizamos flexbox para alinear a nuestro gusto las categorias de música */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Estilos de titulo-categorias*/
+.titulo-categorias {
+    width: 100%;
+}
+
+/*Estilo para hacerle float a la imagen que tenga esta clase */
+.imagen-float {
+    width: 250px;
+    height: 200px;
+    float: right;
+}
+
+/*Lo mismo que lo anterior pero para las imagenes de los grupos*/
+.grupo-float {
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+
+/* Clase para acabar el float y que el texto siga como estaba*/
+.fin-float {
+    clear: both;
+}
+
+/*Estilos de la clase maincate*/
+.maincate {
+    background-color: gray;
+    /* Utilizamos flexbox para alinear a nuestro gusto las categorias de música */
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+}
+
+/* Estilos de la clase contacto*/
+.contacto {
+    flex-basis: 30%;
+    background-color: gray;
+    /* Utilizamos flexbox para alinear a nuestro gusto las categorias de música */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Estilos que le damos al formulario*/
+.formulario {
+    background-color: gray;
+
+    /* Usamos flexbox para poner esta sección en columnas */
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*Estilos que le damos al pie de página*/
+footer {
+	position: relative;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="Musicalizate" content="Todo Tipo de Musica">
+  <title>Información sobre tus grupos de música favoritos</title>
+  <link rel="stylesheet" type="text/css" href="styles/estilos1.css">
+</head>
+
+<body>
+  <header>
+    <h1>Musicalízate</h1>
+    <h3>Todo sobre tus artistas favoritos</h3>
+ 
+    <nav>
+      <ul class="navigation">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+
+  <section id="seccion">
+    <aside class="contacto">
+      <h2>Contacta con nosotros en nuestras redes sociales:</h2>
+      <a href="#instagram">Instagram</a>
+      <a href="#facebook">Facebook</a>
+      <a href="#twitter">Twitter</a>
+      <a href="#tiktok">Tik Tok</a>
+    </aside>
+
+    <section class="formulario">
+      <form action="mailto:joagarcia@birt.eus" method:"post">
+        <fieldset>
+          <b>Nombre:</b>
+          <input type="text" name="nombre" value="Introduce nombre">
+          <b>Apellido</b>
+          <input type="text" name="apellido" value="Introduce apellido">
+          <b>Sexo:</b>
+          <input name="Sexo" value="M" type="radio">
+          "M "
+          <input name="Sexo" value="H" type="radio">
+          "H "
+          <b>Elige el tema por el que nos contactas</b>
+          <select name="tema">
+            <option value="categorias">Categorias</option>
+            <option value="contacto">Contacto</option>
+            <option value="inicio" selected>Inicio</option>
+            <option value="noticias">Noticias</option>
+          </select>
+        </fieldset>
+        <b>Escriba aquí su comentario:</b>
+        <textarea name="mensaje" rows="10" cols="30"></textarea>
+      </form>
+    </section>
+  </section>
+
+  <hr>
+  <footer>
+    <p>Derechos reservados © 2022 - Musicalízate</p>
+  </footer>
+  
+</body>
+</html>
